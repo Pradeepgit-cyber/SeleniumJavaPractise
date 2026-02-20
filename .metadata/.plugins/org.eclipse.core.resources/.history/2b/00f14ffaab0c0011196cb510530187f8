@@ -1,0 +1,21 @@
+
+public class corejava {
+
+	public static void main(String[] args)
+	{
+		int num = 5;
+		String name = "Pradeep";
+		char single = 'p';
+		double dec = 1.5;
+		boolean mycard = true;
+		
+		System.out.println(num + " " + "is my new code");
+		
+		
+		
+		
+
+
+	}
+
+}

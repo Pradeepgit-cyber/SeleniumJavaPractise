@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;JavaTest.Firstcalss&apos; to &apos;FirstClass&apos;&#x0A;- Original project: &apos;selenium-java&apos;&#x0A;- Original element: &apos;JavaTest.Firstcalss&apos;&#x0A;- Renamed element: &apos;JavaTest.FirstClass&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Firstcalss&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;JavaTest{Firstcalss.java[Firstcalss" matchStrategy="1" name="FirstClass" qualified="false" references="true" similarDeclarations="false" stamp="1770357980169" textual="false" version="1.0"/>
+</session>

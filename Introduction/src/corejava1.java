@@ -1,0 +1,36 @@
+//need to print numbers which are divisible by 2
+
+import java.util.ArrayList;
+
+public class corejava1 {
+
+	public static void main(String[] args) 
+	{
+		int[] arr = {1,2,3,4,6,7,8,9,20};
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]%2 == 0)
+			{
+				System.out.println(arr[i]);
+				break;
+			}
+			else
+			{
+				System.out.println(arr[i] + "is not multiple of 2");
+			}
+			
+			ArrayList<String> a = new ArrayList<String>();
+			a.add("Pradeep");
+			a.add("Test");
+			a.add("Automation");
+			a.add("Learning");
+			
+			System.out.println(a.get(2));
+		}
+		
+
+
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public class methodDemo2 {
+
+	public void getuserData()
+	{
+		System.out.println("Hello World2");
+//		return "Pradeep";
+	}
+
+
+}

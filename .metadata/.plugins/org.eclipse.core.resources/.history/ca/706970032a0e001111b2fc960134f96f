@@ -1,0 +1,23 @@
+//String is a object that represents sequence of characters
+//String can be stored in 2 different ways one is string literal and other is by using new keyword.
+
+public class corejava2 {
+
+	public static void main(String[] args) 
+	{
+//		String s = "Automation Learning";
+//		String s1 = "Automation Learning";
+		
+		String p = "Pradeep Automation Learning";
+		
+		for(int i = p.length()-1;i>=0;i--)
+		{
+			System.out.println(p.charAt(i));
+		}
+		
+		
+		
+
+	}
+
+}

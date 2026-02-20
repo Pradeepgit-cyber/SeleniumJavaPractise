@@ -1,0 +1,18 @@
+
+public class methodsDemo {
+
+	public static void main(String[] args)
+	{
+		methodsDemo p = new methodsDemo();
+		p.getData();
+		
+		
+
+	}
+	
+	public void getData()
+	{
+		System.out.println("Hello World");
+	}
+
+}
