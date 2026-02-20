@@ -8,14 +8,13 @@ public class methodsDemo {
 		System.out.println(name);
 		methodDemo2 a = new methodDemo2();
 		a.getuserData();
-		
-		
 
 	}
 	
 	public String getData()
 	{
 		System.out.println("Hello World");
+		System.out.println("Hello");
 		return "Pradeep";
 	}
 

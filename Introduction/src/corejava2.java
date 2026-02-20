@@ -9,7 +9,7 @@ public class corejava2 {
 //		String s1 = "Automation Learning";
 		
 		String p = "Pradeep Automation Learning";
-		
+	
 		for(int i = p.length()-1;i>=0;i--)
 		{
 			System.out.print(p.charAt(i));
