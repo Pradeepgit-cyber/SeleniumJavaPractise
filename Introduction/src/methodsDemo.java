@@ -15,6 +15,8 @@ public class methodsDemo {
 	{
 		System.out.println("Hello World");
 		System.out.println("Hello");
+		System.out.println("Hello2");
+		System.out.println("Hello3");
 		return "Pradeep";
 	}
 
