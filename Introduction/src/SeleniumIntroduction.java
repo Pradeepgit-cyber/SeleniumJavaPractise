@@ -1,24 +1,40 @@
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SeleniumIntroduction
 {
 
-	public static void main(String[] args)
+	public static void main(String[] args) throws InterruptedException
 	{
 		
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://sso.teachable.com/secure/9521/identity/login/password?force=true");
+		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(3));
+		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		driver.manage().window().maximize();
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-//		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("pradeep.kr.baraik@gmail.com");
-		driver.findElement(By.id("email")).sendKeys("pradeep.kr.baraik@gmail.com");
-		driver.findElement(By.id("password")).sendKeys("12345");
-		driver.findElement(By.name("commit")).click();
+		driver.findElement(By.id("inputUsername")).sendKeys("Pradeep");
+		driver.findElement(By.name("inputPassword")).sendKeys("Test123");
+		driver.findElement(By.className("signInBtn")).click();
+		System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
 		
-			
+		
+		driver.findElement(By.linkText("Forgot your password?")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Testuser");
+		driver.findElement(By.cssSelector("input[placeholder=\"Email\"]")).sendKeys("test@user.com");
+		driver.findElement(By.xpath("//input[@type='text'][2]")).clear();
+		driver.findElement(By.cssSelector("input[placeholder=\"Email\"]")).sendKeys("testt@user.com");
+		driver.findElement(By.xpath("//form/input[3]")).sendKeys("7053355200");
+		driver.findElement(By.cssSelector(".reset-pwd-btn")).click(); 
+		System.out.println(driver.findElement(By.cssSelector("form p")).getText());
+
+		
 	
 	}
 

@@ -17,7 +17,7 @@ public class corejava1 {
 			}
 			else
 			{
-				System.out.println(arr[i] + "is not multiple of 2");
+				System.out.println(arr[i] + " " + "is not multiple of 2");
 			}
 			
 			ArrayList<String> a = new ArrayList<String>();
